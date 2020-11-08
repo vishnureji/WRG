@@ -1,0 +1,356 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @font-face {
+            font-family: Sailec;
+            src: url(../fonts/Sailec/Type\ Dynamic\ -\ Sailec.otf);
+            src: url(../fonts/Sailec/Type\ Dynamic\ -\ Sailec\ Thin.otf);
+            src: url(../fonts/Sailec/Type\ Dynamic\ -\ Sailec\ Bold.otf);
+            src: url(../fonts/Sailec/Type\ Dynamic\ -\ Sailec\ Medium.otf);
+        }
+        
+         :root {
+            --theme-green: #102421;
+            --theme-pink: #FFF3F3;
+            --theme-black: #151442;
+            --theme-btn-green: #C7E1BF;
+        }
+        
+        body {
+            font-family: Sailec;
+            font-size: 14px;
+        }
+        /* ..............nav............ */
+        
+        nav {
+            position: absolute !important;
+            z-index: 3;
+            width: 100%;
+        }
+        
+        .nav-link {
+            color: #000000 !important;
+        }
+        
+        .nav-link a span.badge {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            right: 5px;
+            font-size: 10px;
+            padding: 0;
+            width: 15px;
+            height: 15px;
+            padding-top: 2px;
+        }
+        
+        .badge {
+            display: inline-block;
+            min-width: 10px;
+            padding: 3px 7px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #fff;
+            line-height: 1;
+            vertical-align: middle;
+            white-space: nowrap;
+            text-align: center;
+            background-color: #151442;
+            border-radius: 10px;
+        }
+        /* .....................nav-close........... */
+        /* ........................ */
+        
+        .banner-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+        
+        .left-side {
+            background-color: var(--theme-green);
+            height: 100vh;
+            min-width: 63%;
+            align-items: center;
+            top: 0px;
+            color: #ffff;
+            display: flex;
+            align-items: center;
+            padding-left: 87px;
+        }
+        
+        .left-side-content ul li {
+            margin-top: 20px;
+        }
+        
+        .left-side-content ul li:last-child {
+            margin-bottom: 40px;
+        }
+        
+        .left-side-content a {
+            margin-right: 30px;
+            font-size: 14px;
+        }
+        
+        .left-side-content h1 {
+            max-width: 300px;
+        }
+        
+        .left-side p {
+            text-align: unset !important;
+        }
+        
+        .right-side img {
+            position: absolute;
+            z-index: 1;
+            width: 31%;
+            right: 10%;
+            top: 20%;
+        }
+        /* ............................. */
+        
+        section {
+            padding: 30px 0px 30px 0px;
+        }
+        
+        a:hover {
+            color: var(--theme-black) !important;
+            text-decoration: none !important;
+        }
+        
+        ul li {
+            list-style-type: none;
+        }
+        
+        .btn-green {
+            background-color: var(--theme-btn-green);
+        }
+        
+        .theme-btn {
+            color: var(--theme-black);
+            padding: 20px;
+            border-radius: 50px;
+        }
+        
+        .border {
+            border: 1px solid #000000;
+        }
+        
+        .right-1 {
+            right: 0px;
+        }
+        
+        .tittle-btn {
+            display: inline-block;
+        }
+        
+        .testimonial {
+            content: '';
+            width: 100%;
+            min-height: 570px;
+            background-image: url(../img/testi-bg.png);
+            background-size: cover;
+            display: flex;
+            color: #ffff;
+        }
+        
+        .testimonials {
+            background-color: var(--theme-pink);
+            padding: 30px;
+            color: #000000;
+            position: relative;
+            height: 400px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonials p {
+            color: #000000 !important;
+            font-size: 34px;
+            text-align: left;
+        }
+        
+        .testimonial-tittle a {
+            color: #ffff;
+            text-decoration: underline;
+            margin-top: 40px;
+        }
+        
+        .testimonial-tittle a:hover {
+            color: #ffff !important;
+            text-decoration: underline !important;
+        }
+        
+        .left {
+            position: absolute;
+            top: -39px;
+            left: 14px;
+            width: 148px;
+            text-align: left;
+            z-index: 10;
+            font-size: 3rem;
+            line-height: 200px;
+        }
+        
+        .right {
+            position: absolute;
+            bottom: 10px;
+            right: 23px;
+            width: 150px;
+            text-align: right;
+            z-index: 10;
+            font-size: 3rem;
+            line-height: 200px;
+        }
+        
+        .credit {
+            position: absolute;
+            bottom: 21px;
+            right: 69px;
+        }
+        
+        .section-tittle {
+            color: var(--theme-black);
+            text-align: center;
+            font-weight: 300;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .main {
+            border: 2px solid black;
+            width: 100%;
+            display: flex;
+        }
+        
+        .center-1 {
+            display: inline-block;
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .right-1 {
+            display: inline-block;
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .flex-tittle {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .flex-item {
+            min-width: 33.33%;
+        }
+        
+        .flex-item:last-child {
+            text-align: right;
+        }
+        
+        .items h4 {
+            color: var(--theme-black);
+            text-align: center;
+            font-weight: 300;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .items h6,
+        p {
+            color: #8F9095;
+            text-align: center;
+        }
+        
+        .items p {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        .items h6 {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        
+        .benefits p {
+            font-size: 18px;
+            color: var(--theme-black);
+            margin-top: 20px;
+        }
+        
+        footer {
+            background-color: var(--theme-green);
+            color: #ffff;
+            padding: 40px 0px 20px 0px;
+        }
+        
+        footer ul li {
+            font-size: 14px;
+            font-style: normal !important;
+            font-weight: normal !important;
+        }
+        
+        footer span {
+            font-size: 14px;
+        }
+        
+        footer h2 {
+            font-size: 58px;
+            max-width: 300px;
+        }
+        /* Responsive */
+        
+        @media screen and (max-width: 992px) {
+            .left-side {
+                height: 80vh;
+                min-width: 70%;
+            }
+            .banner-container {
+                height: 80vh;
+            }
+            .right-side img {
+                width: 280px;
+                right: 42px;
+                top: 109px;
+            }
+            .left-side {
+                padding-left: 38px;
+            }
+            .left-side-content p {
+                max-width: 323px;
+            }
+            .left-side-content a {
+                margin-right: 13px;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .left-side {
+                padding-left: 20px;
+            }
+            .flex-item {
+                min-width: 100%;
+            }
+            .theme-btn {
+                padding: 10px;
+                border-radius: 50px;
+            }
+            .left-side {
+                height: 80vh;
+                min-width: 100%;
+            }
+            .testimonials p {
+                font-size: 24px;
+                text-align: left;
+            }
+            .right-side img {
+                display: none;
+            }
+        }
